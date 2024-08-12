@@ -13,11 +13,7 @@ const port = process.env.PORT;
 
 // Middlewares
 app.use(express.json());
-app.use(
-  cors({
-    origin: "https://ayam-tuwajuh.vercel.app/",
-  })
-);
+app.use(cors());
 
 // DB Connection
 connectDB();
